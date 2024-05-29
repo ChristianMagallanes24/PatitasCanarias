@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Castraciones</title>
+</head>
+<body>
+    
+  <!--Navbar-->
+  <nav class="navbar">
+    <div class="navbar-container">
+        <div class="logo-container">
+            <img class="logo" src="../assets/baf06f35c1f7b474b0ab7e54de1a3f3c.png" alt="">
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item"><a href="/index.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Castraciones</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+        </ul>
+    </div>
+
+ <!-- Sección para agendar castración -->
+ <section class="castration-section">
+    <h2>Agenda tu cita para castrar</h2>
+    <form class="castration-form">
+        <h3>Formulario de Castración</h3>
+        <label for="pet-type">Tipo de Animal:</label>
+        <select id="pet-type" name="pet-type" required>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+        </select>
+
+        <label for="pet-gender">Sexo de tu Mascota:</label>
+        <select id="pet-gender" name="pet-gender" required>
+            <option value="macho">Macho</option>
+            <option value="hembra">Hembra</option>
+        </select>
+
+        <label for="pet-name">Nombre de tu Mascota:</label>
+        <input type="text" id="pet-name" name="pet-name" required>
+
+        <label for="owner-name">Nombre del Dueño:</label>
+        <input type="text" id="owner-name" name="owner-name" required>
+
+        <label for="contact">Información de Contacto:</label>
+        <input type="text" id="contact" name="contact" required>
+
+        <label for="date">Fecha Preferida:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit" class="btn">Agendar</button>
+    </form>
+</section>
+
+</nav>
+    <script type="module" src="../script.js"></script>
+</body>
+</html>
